@@ -1,0 +1,11 @@
+<h1>Signup!</h1>
+<% flash.each do |name, msg| %>
+   <%= content_tag :div, msg, class: "alert alert-info", style: "text-align: center;" %>
+<% end %>
+<%= form_for :user, url: registrations_path do |f| %>
+  <div> Email: <%= f.text_field :email %></div>
+  <div>
+  	Prize: <%= f.select :prize_id, @prizes.map{|prize|[ "Win a " + prize.name, prize.id ] } , prompt: 'Select Prize' %>
+  </div>
+  <div><%= f.submit "Signup" %></div>
+<% end %>
