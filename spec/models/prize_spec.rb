@@ -9,4 +9,8 @@ RSpec.describe Prize, type: :model do
     it { is_expected.to validate_presence_of(:name) }
     it { is_expected.to validate_uniqueness_of(:name) }
   end
+
+  describe 'associations' do
+    it { should have_many(:user_opted_prizes) }
+  end
 end
