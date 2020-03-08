@@ -1,24 +1,17 @@
-# README
+# Raffle Test Task
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Dependencies
+* Ruby version : 2.4.1
+* Rails Version : 5.0.7
 
-Things you may want to cover:
+## Configuration
 
-* Ruby version
+```gem install bundler && bundle install```
 
-* System dependencies
+## Run the rails server
 
-* Configuration
+```rails s```
 
-* Database creation
+## Run the test suite
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```rspec```
